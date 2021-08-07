@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chasten</title>
+    <link rel="icon" href="../src/img/chasten_favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script defer src="js/bundle.js"></script>
+  </head>
+
+  <body id="top" class="w-full overflow-y-scroll">
+    <!-- Header -->
+    <header
+      id="header"
+      class="
+        fixed
+        top-0
+        z-50
+        flex flex-col
+        items-center
+        justify-center
+        w-full
+        text-white
+        bg-blue-400
+        h-28
+      "
+    >
+      <div
+        id="headerWrap"
+        class="flex flex-row items-center justify-between w-full p-8"
+      >
+        <div class="logo-wrap">
+          <a
+            href="#"
+            class="
+              text-2xl
+              font-bold
+              text-left text-white
+              transition-opacity
+              duration-100
+              ease-in
+              logo
+              hover:opacity-75
+              tracking-wide
+            "
+            >Chasten.</a
+          >
+        </div>
+
+        <!-- Nav -->
+        <nav id="mainNav relative">
+          <div id="menuWrap absolute top-0 right-4 z-50">
+            <a
+              id="menu"
+              class="
+                absolute
+                z-50
+                md:hidden
+                top-12
+                right-8
+                transition-opacity
+                duration-300
+                hover:opacity-75
+                ease-in
+              "
+              ><span id="menuBtn" class="cursor-pointer"
+                ><i class="fas fa-bars"></i></span
+            ></a>
+          </div>
+
+          <!-- Nav--pc -->
+          <div
+            class="
+              panel--pc
+              z-40
+              transform
+              transition-all
+              duration-300
+              hidden
+              md:block
+              h-screen
+              md:h-full
+              bg-blue-400
+            "
+          >
+            <ul
+              class="
+                panel-list--pc
+                flex flex-col
+                md:flex-row
+                items-center
+                justify-center
+                flex-nowrap
+                md:justify-between
+                gap-24
+                h-full
+                md:gap-6
+                p-4
+                transition-all
+                duration-300
+                ease-in
+              "
+            >
+              <li class="panel-list--pc__item">
+                <a
+                  href="#top"
+                  class="
+                    panel-list--pc__item__link
+                    text-sm text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >Pricing</a
+                >
+              </li>
+              <li class="panel-list--pc__item">
+                <a
+                  href="#sec01"
+                  class="
+                    panel-list--pc__item__link
+                    text-sm text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >Blog</a
+                >
+              </li>
+              <li class="panel-list--pc__item">
+                <a
+                  href="#sec02"
+                  class="
+                    panel-list--pc__item__link
+                    text-sm text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >FAQs</a
+                >
+              </li>
+              <li class="panel-list--pc__item">
+                <a
+                  href="#sec03"
+                  class="
+                    panel-list--pc__item__link
+                    text-sm text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >Contact</a
+                >
+              </li>
+              <li class="panel-list--pc__item">
+                <a
+                  href="#sec04"
+                  class="
+                    panel-list--pc__item__link
+                    text-sm text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >Help</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- // Nav--pc -->
+
+          <!-- Nav--sp -->
+          <div
+            class="
+              panel--sp
+              w-0
+              opacity-0
+              absolute
+              top-0
+              right-0
+              transition-all
+              transform
+              translate-x-full
+              duration-300
+              ease-in
+              h-screen
+              bg-blue-400
+            "
+          >
+            <ul
+              class="
+                panel-list--sp
+                flex flex-col flex-nowrap
+                items-center
+                justify-center
+                gap-24
+                h-full
+                transition-all
+                duration-300
+                ease-in
+                transform
+                translate-x-full
+                p-4
+                w-0
+                opacity-0
+              "
+            >
+              <li class="panel-list--sp__item">
+                <a
+                  href="#top"
+                  class="
+                    panel-list--sp__item__link
+                    text-lg text-white
+                    font-bold
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >Pricing</a
+                >
+              </li>
+              <li class="panel-list--sp__item">
+                <a
+                  href="#sec01"
+                  class="
+                    panel-list--sp__item__link
+                    text-lg
+                    font-bold
+                    text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >Blog</a
+                >
+              </li>
+              <li class="panel-list--sp__item">
+                <a
+                  href="#sec02"
+                  class="
+                    panel-list--sp__item__link
+                    text-lg
+                    font-bold
+                    text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >FAQs</a
+                >
+              </li>
+              <li class="panel-list--sp__item">
+                <a
+                  href="#sec03"
+                  class="
+                    panel-list--sp__item__link
+                    text-lg
+                    font-bold
+                    text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >Contact</a
+                >
+              </li>
+              <li class="panel-list--sp__item">
+                <a
+                  href="#sec04"
+                  class="
+                    panel-list--sp__item__link
+                    text-lg
+                    font-bold
+                    text-white
+                    transition-opacity
+                    duration-100
+                    ease-in
+                    hover:opacity-75
+                  "
+                  >Help</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- // Nav--sp -->
+        </nav>
+        <!-- // Nav -->
+
+        <!-- Overlay -->
+        <div
+          class="
+            overlay
+            w-0
+            h-screen
+            transform
+            translate-x-full
+            opacity-0
+            absolute
+            top-0
+            right-0
+            transition-all
+            duration-300
+            ease-in
+            cursor-pointer
+            bg-black
+          "
+        ></div>
+        <!-- // Overlay -->
+      </div>
+    </header>
+    <!-- // Header -->
+
+    <!-- Introduction -->
+    <section id="sec01" class="my-28 overflow-hidden">
+      <div class="bg-blue-400 wrap w-screen overflow-hidden">
+        <div class="container flex flex-col gap-16 px-8 pt-12 mx-auto inner">
+          <div
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-full
+              gap-12
+              top-left-wrap
+              md:items-start md:justify-center md:w-2/4
+            "
+          >
+            <p class="text-white text-lg font-medium tracking-wider">
+              INTRODUCTION
+            </p>
+            <h2
+              class="
+                text-5xl
+                font-bold
+                leading-tight
+                text-center text-white
+                md:text-left
+              "
+            >
+              Get an awesome designer for your agencies
+            </h2>
+            <div class="flex flex-col items-center gap-6 btn-wrap md:flex-row">
+              <button
+                href=""
+                type="button"
+                class="
+                  h-16
+                  text-sm
+                  font-bold
+                  text-black
+                  transition-opacity
+                  duration-150
+                  ease-in
+                  bg-white
+                  w-52
+                  hover:opacity-50
+                "
+              >
+                GET STARTED
+              </button>
+              <button
+                href=""
+                type="button"
+                class="
+                  h-16
+                  text-sm
+                  font-bold
+                  text-white
+                  transition-opacity
+                  duration-150
+                  ease-in
+                  bg-blue-400
+                  border border-white
+                  w-52
+                  hover:opacity-50
+                "
+              >
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+          <div class="top-right-wrap"></div>
+        </div>
+        <div class="w-full bottom-wrap mt-28">
+          <ul class="grid items-center justify-between grid-cols-3">
+            <li class="h-64 overflow-hidden border border-white md:h-36">
+              <div
+                class="
+                  flex flex-col
+                  items-center
+                  justify-center
+                  h-full
+                  gap-4
+                  px-8
+                  py-6
+                  inner--wrap
+                  md:flex-row
+                "
+              >
+                <div class="flex items-center h-full img--wrap">
+                  <img
+                    class="w-10 h-10 md:transform md:-translate-y-4"
+                    src="../src/img/chasten_intro_icon_01.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="
+                    flex flex-col
+                    items-center
+                    justify-center
+                    h-full
+                    gap-4
+                    text--wrap
+                    md:items-start
+                  "
+                >
+                  <h3
+                    class="
+                      text-2xl
+                      font-bold
+                      text-center text-white
+                      md:text-left
+                    "
+                  >
+                    17.000+
+                  </h3>
+                  <p class="text-center text-white md:text-left">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="
+                h-64
+                overflow-hidden
+                border-t border-r border-b border-white
+                md:h-36
+              "
+            >
+              <div
+                class="
+                  flex flex-col
+                  items-center
+                  justify-center
+                  h-full
+                  gap-4
+                  px-8
+                  py-6
+                  inner--wrap
+                  md:flex-row
+                "
+              >
+                <div class="flex items-center h-full img--wrap">
+                  <img
+                    class="w-10 h-10 md:transform md:-translate-y-4"
+                    src="../src/img/chasten_intro_icon_02.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="
+                    flex flex-col
+                    items-center
+                    justify-center
+                    h-full
+                    gap-4
+                    text--wrap
+                    md:items-start
+                  "
+                >
+                  <h3
+                    class="
+                      text-2xl
+                      font-bold
+                      text-center text-white
+                      md:text-left
+                    "
+                  >
+                    20.000+
+                  </h3>
+                  <p class="text-center text-white md:text-left">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="
+                h-64
+                overflow-hidden
+                border-t border-r border-b border-white
+                md:h-36
+              "
+            >
+              <div
+                class="
+                  flex flex-col
+                  items-center
+                  justify-center
+                  h-full
+                  gap-4
+                  px-8
+                  py-6
+                  inner--wrap
+                  md:flex-row
+                "
+              >
+                <div class="flex items-center h-full img--wrap">
+                  <img
+                    class="w-10 h-10 md:transform md:-translate-y-4"
+                    src="../src/img/chasten_intro_icon_03.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="
+                    flex flex-col
+                    items-center
+                    justify-center
+                    h-full
+                    gap-4
+                    text--wrap
+                    md:items-start
+                  "
+                >
+                  <h3
+                    class="
+                      text-2xl
+                      font-bold
+                      text-center text-white
+                      md:text-left
+                    "
+                  >
+                    15.000+
+                  </h3>
+                  <p class="text-center text-white md:text-left">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- // Introduction -->
+
+    <!-- What we do -->
+    <section id="sec02" class="mt-28 overflow-hidden">
+      <div
+        class="
+          container
+          flex flex-col
+          items-center
+          justify-between
+          gap-12
+          p-8
+          mx-auto
+          wrap
+        "
+      >
+        <div
+          class="
+            flex flex-col
+            items-center
+            justify-center
+            gap-4
+            top-wrap
+            md:flex-row md:justify-between md:items-start
+          "
+        >
+          <div
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              gap-4
+              left-wrap
+              md:w-2/4 md:items-start
+            "
+          >
+            <p class="text-gray-400 text-lg font-medium tracking-wider">
+              WHAT WE DO
+            </p>
+            <h2
+              class="
+                text-4xl
+                font-bold
+                leading-normal
+                text-center text-black
+                md:text-left
+              "
+            >
+              We have dedicated designers on these
+            </h2>
+          </div>
+          <div class="right-wrap md:w-2/4">
+            <p class="leading-7 text-center text-gray-400 md:text-left">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus dicta nihil accusantium omnis adipisci ipsam ut
+              repellendus repellat perspiciatis fugiat.
+            </p>
+          </div>
+        </div>
+        <div class="bottom-wrap container">
+          <ul
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              gap-4
+              card
+              md:flex-row md:justify-between
+            "
+          >
+            <li
+              class="
+                flex flex-col
+                items-center
+                justify-center
+                w-3/4
+                gap-3
+                p-12
+                overflow-hidden
+                border border-black
+                md:w-auto md:h-96 md:max-h-96
+              "
+            >
+              <div class="img--wrap">
+                <img
+                  class="w-32 h-auto max-w-lg"
+                  src="../src/img/chasten_card_img_01.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  items-center
+                  justify-center
+                  gap-4
+                  text_button--wrap
+                "
+              >
+                <h3 class="text-lg font-bold text-center text-black">
+                  VIsual Identity
+                </h3>
+                <p class="text-sm text-center text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Sapiente, veniam?
+                </p>
+                <button
+                  href=""
+                  type="button"
+                  class="
+                    h-16
+                    text-sm
+                    font-bold
+                    text-black
+                    transition
+                    border border-black
+                    w-52
+                    hover:opacity-75
+                  "
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </li>
+            <li
+              class="
+                flex flex-col
+                items-center
+                justify-center
+                w-3/4
+                gap-3
+                p-12
+                overflow-hidden
+                border border-black
+                md:w-auto md:h-96 md:max-h-96
+              "
+            >
+              <div class="img--wrap">
+                <img
+                  class="w-32 h-auto max-w-lg"
+                  src="../src/img/chasten_card_img_02.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  items-center
+                  justify-center
+                  gap-4
+                  text_button--wrap
+                "
+              >
+                <h3 class="text-lg font-bold text-center text-black">
+                  Website Design
+                </h3>
+                <p class="text-sm text-center text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Sapiente, veniam?
+                </p>
+                <button
+                  href=""
+                  type="button"
+                  class="
+                    h-16
+                    text-sm
+                    font-bold
+                    text-black
+                    transition
+                    border border-black
+                    w-52
+                    hover:opacity-75
+                  "
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </li>
+            <li
+              class="
+                flex flex-col
+                items-center
+                justify-center
+                w-3/4
+                gap-3
+                p-12
+                overflow-hidden
+                border border-black
+                md:w-auto md:h-96 md:max-h-96
+              "
+            >
+              <div class="img--wrap">
+                <img
+                  class="w-32 h-auto max-w-lg"
+                  src="../src/img/chasten_card_img_03.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="
+                  flex flex-col
+                  items-center
+                  justify-center
+                  gap-4
+                  text_button--wrap
+                "
+              >
+                <h3 class="text-lg font-bold text-center text-black">
+                  UI/UX Design
+                </h3>
+                <p class="text-sm text-center text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Sapiente, veniam?
+                </p>
+                <button
+                  href=""
+                  type="button"
+                  class="
+                    h-16
+                    text-sm
+                    font-bold
+                    text-black
+                    transition
+                    border border-black
+                    w-52
+                    hover:opacity-75
+                  "
+                >
+                  LEARN MORE
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- // What we do -->
+
+    <!-- Our works -->
+    <section id="sec03" class="mt-28 overflow-hidden">
+      <div
+        class="
+          container
+          flex flex-col
+          items-center
+          justify-between
+          gap-24
+          p-8
+          mx-auto
+          wrap
+        "
+      >
+        <div
+          class="
+            flex flex-col
+            items-center
+            justify-center
+            gap-4
+            top-wrap
+            md:flex-row md:justify-between md:items-start
+          "
+        >
+          <div
+            class="
+              flex flex-col
+              items-center
+              gap-4
+              left-wrap
+              md:w-2/4 md:items-start
+            "
+          >
+            <p class="text-gray-400 text-lg font-medium tracking-wider">
+              OUR WORKS
+            </p>
+            <h2
+              class="
+                text-4xl
+                font-bold
+                leading-normal
+                text-center text-black
+                md:text-left
+              "
+            >
+              This is some of what we worked on before
+            </h2>
+          </div>
+          <div class="right-wrap md:w-2/4">
+            <p class="leading-7 text-center text-gray-400 md:text-left">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus dicta nihil accusantium omnis adipisci ipsam ut
+              repellendus repellat perspiciatis fugiat.
+            </p>
+          </div>
+        </div>
+        <div class="w-full bottom-wrap">
+          <ul
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-full
+              gap-4
+              card
+              md:flex-row md:justify-between md:gap-12
+            "
+          >
+            <li class="">
+              <div class="img--wrap">
+                <img
+                  class="h-auto"
+                  src="../src/img/chasten_our-works_img_01.jpg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="">
+              <div class="img--wrap">
+                <img
+                  class="h-auto"
+                  src="../src/img/chasten_our-works_img_02.jpg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- // Our works -->
+
+    <!-- How we work -->
+    <section id="sec04" class="mt-28 overflow-hidden">
+      <div
+        class="
+          container
+          flex flex-col
+          items-center
+          justify-between
+          gap-24
+          p-8
+          mx-auto
+          wrap
+        "
+      >
+        <div
+          class="flex flex-row items-center justify-center top-wrap md:w-2/4"
+        >
+          <div class="flex flex-col items-center justify-center gap-4">
+            <p class="text-gray-400 text-lg font-medium tracking-wider">
+              HOW WE WORK
+            </p>
+            <h2
+              class="text-4xl font-bold leading-normal text-center text-black"
+            >
+              This is how we manage all of our projects
+            </h2>
+          </div>
+        </div>
+        <div
+          class="
+            flex flex-col
+            items-center
+            justify-center
+            w-full
+            gap-8
+            bottom-wrap
+            md:flex-row md:justify-between
+          "
+        >
+          <div class="bottom-left-list--wrap md:w-auto">
+            <ul
+              class="
+                flex flex-col
+                items-start
+                justify-between
+                w-full
+                gap-8
+                card
+              "
+            >
+              <li class="flex flex-row items-center justify-center gap-8">
+                <div class="order-2 text--wrap">
+                  <p
+                    class="
+                      text-left text-black
+                      md:text-right
+                      text-small
+                      leading-snug
+                    "
+                  >
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div
+                  class="
+                    relative
+                    flex
+                    items-center
+                    justify-center
+                    p-8
+                    bg-blue-400
+                    rounded-full
+                    icon--wrap
+                    md:order-2
+                  "
+                >
+                  <img
+                    class="absolute w-5 h-5"
+                    src="../src/img/chasten_how_we_work_icon_01.png"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li class="flex flex-row items-center justify-center gap-8">
+                <div class="order-2 text--wrap">
+                  <p
+                    class="
+                      text-left text-black
+                      md:text-right
+                      text-small
+                      leading-snug
+                    "
+                  >
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div
+                  class="
+                    relative
+                    flex
+                    items-center
+                    justify-center
+                    p-8
+                    bg-blue-400
+                    rounded-full
+                    icon--wrap
+                    md:order-2
+                  "
+                >
+                  <img
+                    class="absolute w-5 h-5"
+                    src="../src/img/chasten_how_we_work_icon_03.png"
+                    alt=""
+                  />
+                </div>
+              </li>
+              <li class="flex flex-row items-center justify-center gap-8">
+                <div class="order-2 text--wrap">
+                  <p
+                    class="
+                      text-left text-black
+                      md:text-right
+                      text-small
+                      leading-snug
+                    "
+                  >
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+                <div
+                  class="
+                    relative
+                    flex
+                    items-center
+                    justify-center
+                    p-8
+                    bg-blue-400
+                    rounded-full
+                    icon--wrap
+                    md:order-2
+                  "
+                >
+                  <img
+                    class="absolute w-5 h-5"
+                    src="../src/img/chasten_how_we_work_icon_05.png"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hidden w-2/5 bottom-center-list--wrap md:block">
+            <div class="img--wrap">
+              <img
+                class="w-3/4 max-w-xs mx-auto"
+                src="../src/img/chasten_how-we-work_ico.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="bottom-right-list--wrap md:w-auto">
+            <ul
+              class="
+                flex flex-col
+                items-center
+                justify-between
+                w-full
+                gap-8
+                card
+              "
+            >
+              <li class="flex flex-row items-center justify-center gap-8">
+                <div
+                  class="
+                    relative
+                    flex
+                    items-center
+                    justify-center
+                    p-8
+                    bg-blue-400
+                    rounded-full
+                    icon--wrap
+                  "
+                >
+                  <img
+                    class="absolute w-5 h-5"
+                    src="../src/img/chasten_how_we_work_icon_02.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text--wrap">
+                  <p class="text-left text-black text-small leading-snug">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </li>
+              <li class="flex flex-row items-center justify-center gap-8">
+                <div
+                  class="
+                    relative
+                    flex
+                    items-center
+                    justify-center
+                    p-8
+                    bg-blue-400
+                    rounded-full
+                    icon--wrap
+                  "
+                >
+                  <img
+                    class="absolute w-5 h-5"
+                    src="../src/img/chasten_how_we_work_icon_04.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text--wrap">
+                  <p class="text-left text-black text-small leading-snug">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </li>
+              <li class="flex flex-row items-center justify-center gap-8">
+                <div
+                  class="
+                    relative
+                    flex
+                    items-center
+                    justify-center
+                    p-8
+                    bg-blue-400
+                    rounded-full
+                    icon--wrap
+                  "
+                >
+                  <img
+                    class="absolute w-5 h-5"
+                    src="../src/img/chasten_how_we_work_icon_06.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text--wrap">
+                  <p class="text-left text-black text-small leading-snug">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // How we work -->
+
+    <!-- CTA -->
+    <section id="sec06" class="mt-28 overflow-hidden">
+      <div class="bg-blue-400 wrap">
+        <div
+          class="
+            container
+            flex flex-col
+            items-center
+            justify-center
+            gap-24
+            p-8
+            mx-auto
+            inner-wrap
+            max-h-96
+            h-96
+          "
+        >
+          <div
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-full
+              md:w-2/4
+              gap-12
+              top-wrap
+            "
+          >
+            <h2
+              class="text-4xl font-bold leading-normal text-center text-white"
+            >
+              Ready to collaborate? <br />Try us out!
+            </h2>
+            <button
+              href=""
+              type="button"
+              class="
+                h-16
+                text-sm
+                font-bold
+                text-black
+                transition
+                bg-white
+                w-52
+                hover:opacity-75
+              "
+            >
+              GET STARTED
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // CTA -->
+
+    <!-- Footer -->
+    <footer id="footer" class="overflow-hidden my-28">
+      <div class="container p-8 mx-auto inner">
+        <div
+          class="
+            flex flex-col
+            items-start
+            justify-start
+            gap-16
+            mb-16
+            top--wrap
+            md:flex-row md:justify-between
+          "
+        >
+          <div class="flex flex-col gap-4 top-left--wrap md:w-1/4">
+            <a
+              href="#"
+              class="
+                text-lg
+                font-bold
+                text-blue-400
+                cursor-pointer
+                tracking-wide
+              "
+              >Chasten.</a
+            >
+            <p class="text-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+              accusantium!
+            </p>
+          </div>
+
+          <div
+            class="
+              flex flex-col
+              items-start
+              justify-between
+              gap-12
+              top-right--wrap
+              md:w-3/5 md:flex-row
+            "
+          >
+            <ul
+              class="
+                flex flex-col
+                items-start
+                justify-start
+                w-full
+                gap-2
+                top-right-list
+                md:w-1/2
+              "
+            >
+              <li class="text-lg font-bold text-black">Support</li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >Career</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >Help</a
+                >
+              </li>
+            </ul>
+            <ul
+              class="
+                flex flex-col
+                items-start
+                justify-start
+                w-full
+                gap-2
+                top-right-list
+                md:w-1/2
+              "
+            >
+              <li class="text-lg font-bold text-black">Product</li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >E-Books</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >Presentation</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >Dashboard</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >Event Organizer</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-black
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >Management Tool</a
+                >
+              </li>
+            </ul>
+            <ul
+              class="
+                flex flex-col
+                items-start
+                justify-start
+                w-full
+                gap-2
+                top-right-list
+                md:w-1/2
+              "
+            >
+              <li class="text-lg font-bold text-black">Address</li>
+              <li>
+                <a
+                  href=""
+                  class="
+                    p-2
+                    text-sm text-blue-400
+                    underline
+                    transition-opacity
+                    duration-150
+                    ease-in
+                    hover:opacity-50
+                    break-normal
+                  "
+                  >hello@chasten.io</a
+                >
+              </li>
+              <li class="p-2 text-sm text-black break-normal">
+                Jl. Pahlawan Gg. 1 No, 33 Rejoagung, Kedungwaru Tulungagung,
+                66225 - Indonesia
+              </li>
+              <li class="p-2 text-sm text-black">(+62) 895806184222</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center bottom--wrap md:text-left">
+          <small> &copy; 2021 Kedaton. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+    <!-- // Footer -->
+  </body>
+</html>
